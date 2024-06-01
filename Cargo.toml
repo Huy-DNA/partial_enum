@@ -1,11 +1,8 @@
-[package]
-name = "partial_enum"
-version = "0.1.0"
-edition = "2021"
+[workspace]
 
-[lib]
-proc-macro = true
+members = [
+  "partial_enum_macro",
+  "types",
+]
 
-[dependencies]
-quote = "1.0.36"
-syn = { version = "2.0.66", features = ["full"] }
+resolver = "2"
